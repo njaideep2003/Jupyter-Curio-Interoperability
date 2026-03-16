@@ -1,0 +1,29 @@
+{
+  "nodes": [
+    {
+      "id": "1",
+      "type": "code",
+      "code": "import pandas as pd\n\ndf = pd.read_csv(\"../data/data.csv\")\nprint(df.head())"
+    },
+    {
+      "id": "2",
+      "type": "code",
+      "code": "df = df[df['age'] > 20]"
+    },
+    {
+      "id": "3",
+      "type": "code",
+      "code": "print(df.head())"
+    }
+  ],
+  "edges": [
+    {
+      "source": "1",
+      "target": "2"
+    },
+    {
+      "source": "2",
+      "target": "3"
+    }
+  ]
+}
